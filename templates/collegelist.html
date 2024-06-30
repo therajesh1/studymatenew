@@ -1,0 +1,526 @@
+{% extends "base.html" %}
+{% block title %}
+college list
+{% endblock title %}
+{% block body %}
+
+<style>
+    
+    h1 {
+        font-weight: bold;
+        text-align: center;
+        position: relative;
+    }
+    h1::after {
+        content: '';
+        display: block;
+        width: 50%; /* Adjust width of underline */
+        height: 2px; /* Adjust thickness of underline */
+        background-color: black;
+        margin: 8px auto 0;
+    }
+    h2{
+        font-weight: bold;
+        text-align: center;
+    }
+  </style>
+  
+  
+  <h1>MAHARASHTRA TOP 30 COLLEGES</h1>
+  <style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+    }
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+    tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+    tr:hover {
+        background-color: #ddd;
+    }
+</style>
+
+<h2>Top Engineering Colleges in Maharashtra</h2>
+<table>
+    <tr>
+        <th>College Name</th>
+        <th>Highest Package (INR)</th>
+        <th>Average Package (INR)</th>
+        <th>Website</th>
+    </tr>
+    <tr>
+        <td>Institute of Chemical Technology (ICT), Mumbai</td>
+        <td>18 LPA</td>
+        <td>6.5 LPA</td>
+        <td><a href="http://www.ictmumbai.edu.in" target="_blank">ictmumbai.edu.in</a></td>
+    </tr>
+    <tr>
+        <td>Veermata Jijabai Technological Institute (VJTI), Mumbai</td>
+        <td>36 LPA</td>
+        <td>7 LPA</td>
+        <td><a href="http://www.vjti.ac.in" target="_blank">vjti.ac.in</a></td>
+    </tr>
+    <tr>
+        <td>Sardar Patel Institute of Technology (SPIT), Mumbai</td>
+        <td>42 LPA</td>
+        <td>7.2 LPA</td>
+        <td><a href="http://www.spit.ac.in" target="_blank">spit.ac.in</a></td>
+    </tr>
+    <tr>
+        <td>College of Engineering Pune (COEP), Pune</td>
+        <td>40 LPA</td>
+        <td>8 LPA</td>
+        <td><a href="http://www.coep.org.in" target="_blank">coep.org.in</a></td>
+    </tr>
+    <tr>
+        <td>Dwarkadas J. Sanghvi College of Engineering (DJSCE), Mumbai</td>
+        <td>27 LPA</td>
+        <td>6.6 LPA</td>
+        <td><a href="http://www.djsce.ac.in" target="_blank">djsce.ac.in</a></td>
+    </tr>
+    <tr>
+        <td>Walchand College of Engineering (WCE), Sangli</td>
+        <td>20 LPA</td>
+        <td>5.5 LPA</td>
+        <td><a href="http://www.walchandsangli.ac.in" target="_blank">walchandsangli.ac.in</a></td>
+    </tr>
+    <tr>
+        <td>K. J. Somaiya College of Engineering (KJSCE), Mumbai</td>
+        <td>24 LPA</td>
+        <td>5.5 LPA</td>
+        <td><a href="http://kjsce.somaiya.edu" target="_blank">kjsce.somaiya.edu</a></td>
+    </tr>
+    <tr>
+        <td>Vishwakarma Institute of Technology (VIT), Pune</td>
+        <td>22 LPA</td>
+        <td>6 LPA</td>
+        <td><a href="http://www.vit.edu" target="_blank">vit.edu</a></td>
+    </tr>
+    <tr>
+        <td>Thadomal Shahani Engineering College (TSEC), Mumbai</td>
+        <td>20 LPA</td>
+        <td>5 LPA</td>
+        <td><a href="http://www.tsec.edu" target="_blank">tsec.edu</a></td>
+    </tr>
+    <tr>
+        <td>Pune Institute of Computer Technology (PICT), Pune</td>
+        <td>32 LPA</td>
+        <td>6.5 LPA</td>
+        <td><a href="http://www.pict.edu" target="_blank">pict.edu</a></td>
+    </tr>
+    <tr>
+        <td>MIT College of Engineering (MITCOE), Pune</td>
+        <td>28 LPA</td>
+        <td>5.8 LPA</td>
+        <td><a href="http://www.mitcoe.edu.in" target="_blank">mitcoe.edu.in</a></td>
+    </tr>
+    <tr>
+        <td>Fr. Conceicao Rodrigues College of Engineering (CRCE), Mumbai</td>
+        <td>15 LPA</td>
+        <td>4.5 LPA</td>
+        <td><a href="http://www.frcrce.ac.in" target="_blank">frcrce.ac.in</a></td>
+    </tr>
+    <tr>
+        <td>Sardar Patel College of Engineering (SPCE), Mumbai</td>
+        <td>16 LPA</td>
+        <td>5.5 LPA</td>
+        <td><a href="http://www.spce.ac.in" target="_blank">spce.ac.in</a></td>
+    </tr>
+    <tr>
+        <td>Government College of Engineering, Aurangabad</td>
+        <td>12 LPA</td>
+        <td>4.5 LPA</td>
+        <td><a href="http://www.geca.ac.in" target="_blank">geca.ac.in</a></td>
+    </tr>
+    <tr>
+        <td>VJTI, Mumbai</td>
+        <td>30 LPA</td>
+        <td>7 LPA</td>
+        <td><a href="http://www.vjti.ac.in" target="_blank">vjti.ac.in</a></td>
+    </tr>
+    <tr>
+        <td>Xavier Institute of Engineering (XIE), Mumbai</td>
+        <td>10 LPA</td>
+        <td>4 LPA</td>
+        <td><a href="http://www.xavierengg.com" target="_blank">xavierengg.com</a></td>
+    </tr>
+    <tr>
+        <td>Shri Ramdeobaba College of Engineering and Management (RCOEM), Nagpur</td>
+        <td>25 LPA</td>
+        <td>5.2 LPA</td>
+        <td><a href="http://www.rknec.edu" target="_blank">rknec.edu</a></td>
+    </tr>
+    <tr>
+        <td>Rajiv Gandhi Institute of Technology (RGIT), Mumbai</td>
+        <td>12 LPA</td>
+        <td>4 LPA</td>
+        <td><a href="http://www.rgit.edu.in" target="_blank">rgit.edu.in</a></td>
+    </tr>
+    <tr>
+        <td>Rizvi College of Engineering, Mumbai</td>
+        <td>9 LPA</td>
+        <td>3.5 LPA</td>
+        <td><a href="http://engg.rizvi.edu.in" target="_blank">engg.rizvi.edu.in</a></td>
+    </tr>
+    <tr>
+        <td>Vidyalankar Institute of Technology (VIT), Mumbai</td>
+        <td>14 LPA</td>
+        <td>4.2 LPA</td>
+        <td><a href="http://www.vit.edu.in" target="_blank">vit.edu.in</a></td>
+    </tr>
+    <tr>
+        <td>Shah and Anchor Kutchhi Engineering College (SAKEC), Mumbai</td>
+        <td>11 LPA</td>
+        <td>4 LPA</td>
+        <td><a href="http://www.shahandanchor.com" target="_blank">shahandanchor.com</a></td>
+    </tr>
+    <tr>
+        <td>Atharva College of Engineering, Mumbai</td>
+        <td>13 LPA</td>
+        <td>4.2 LPA</td>
+        <td><a href="http://www.atharvacoe.ac.in" target="_blank">atharvacoe.ac.in</a></td>
+    </tr>
+    <tr>
+        <td>MIT Academy of Engineering (MITAOE), Pune</td>
+        <td>18 LPA</td>
+        <td>5 LPA</td>
+        <td><a href="http://www.mitaoe.ac.in" target="_blank">mitaoe.ac.in</a></td>
+    </tr>
+    <tr>
+        <td>Rajiv Gandhi College of Engineering and Research (RGCER), Nagpur</td>
+        <td>10 LPA</td>
+        <td>3.8 LPA</td>
+        <td><a href="http://www.rgcer.edu.in" target="_blank">rgcer.edu.in</a></td>
+    </tr>
+    <tr>
+        <td>JSPM's Rajarshi Shahu College of Engineering (RSCOE), Pune</td>
+        <td>20 LPA</td>
+        <td>5 LPA</td>
+        <td><a href="http://www.jspmrscoe.edu.in" target="_blank">jspmrscoe.edu.in</a></td>
+    </tr>
+    <tr>
+        <td>Dr. D. Y. Patil Institute of Technology (DYPIET), Pune</td>
+        <td>25 LPA</td>
+        <td>6 LPA</td>
+        <td><a href="http://www.dypiet.ac.in" target="_blank">dypiet.ac.in</a></td>
+    </tr>
+    <tr>
+        <td>Sinhgad College of Engineering (SCOE), Pune</td>
+        <td>16 LPA</td>
+        <td>4.5 LPA</td>
+        <td><a href="http://www.sinhgad.edu" target="_blank">sinhgad.edu</a></td>
+    </tr>
+    <tr>
+        <td>Ramrao Adik Institute of Technology (RAIT), Navi Mumbai</td>
+        <td>22 LPA</td>
+        <td>5.8 LPA</td>
+        <td><a href="http://www.rait.ac.in" target="_blank">rait.ac.in</a></td>
+    </tr>
+    <tr>
+        <td>Bharti Vidyapeeth Deemed University College of Engineering, Pune</td>
+        <td>18 LPA</td>
+        <td>4.8 LPA</td>
+        <td><a href="http://www.bvucoep.edu.in" target="_blank">bvucoep.edu.in</a></td>
+    </tr>
+</table>
+
+
+
+
+
+
+
+<style>
+    
+    h1 {
+        font-weight: bold;
+        text-align: center;
+        position: relative;
+    }
+    h1::after {
+        content: '';
+        display: block;
+        width: 50%; /* Adjust width of underline */
+        height: 2px; /* Adjust thickness of underline */
+        background-color: black;
+        margin: 8px auto 0;
+    }
+    h2{
+        font-weight: bold;
+        text-align: center;
+    }
+  </style>
+  
+  
+  <h1>MUMBAI TOP 15 COLLEGES</h1>
+  <style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+    }
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+    tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+    tr:hover {
+        background-color: #ddd;
+    }
+</style>
+
+<h2>Top Engineering Colleges in Mumbai</h2>
+<table>
+    <tr>
+        <th>College Name</th>
+        <th>Highest Package (INR)</th>
+        <th>Average Package (INR)</th>
+        <th>Website</th>
+    </tr>
+    <tr>
+        <td>Institute of Chemical Technology (ICT)</td>
+        <td>18 LPA</td>
+        <td>6.5 LPA</td>
+        <td><a href="http://www.ictmumbai.edu.in" target="_blank">ictmumbai.edu.in</a></td>
+    </tr>
+    <tr>
+        <td>Veermata Jijabai Technological Institute (VJTI)</td>
+        <td>36 LPA</td>
+        <td>7 LPA</td>
+        <td><a href="http://www.vjti.ac.in" target="_blank">vjti.ac.in</a></td>
+    </tr>
+    <tr>
+        <td>Sardar Patel Institute of Technology (SPIT)</td>
+        <td>42 LPA</td>
+        <td>7.2 LPA</td>
+        <td><a href="http://www.spit.ac.in" target="_blank">spit.ac.in</a></td>
+    </tr>
+    <tr>
+        <td>Dwarkadas J. Sanghvi College of Engineering (DJSCE)</td>
+        <td>27 LPA</td>
+        <td>6.6 LPA</td>
+        <td><a href="http://www.djsce.ac.in" target="_blank">djsce.ac.in</a></td>
+    </tr>
+    <tr>
+        <td>K. J. Somaiya College of Engineering (KJSCE)</td>
+        <td>24 LPA</td>
+        <td>5.5 LPA</td>
+        <td><a href="http://kjsce.somaiya.edu" target="_blank">kjsce.somaiya.edu</a></td>
+    </tr>
+    <tr>
+        <td>Thadomal Shahani Engineering College (TSEC)</td>
+        <td>20 LPA</td>
+        <td>5 LPA</td>
+        <td><a href="http://www.tsec.edu" target="_blank">tsec.edu</a></td>
+    </tr>
+    <tr>
+        <td>Sardar Patel College of Engineering (SPCE)</td>
+        <td>16 LPA</td>
+        <td>5.5 LPA</td>
+        <td><a href="http://www.spce.ac.in" target="_blank">spce.ac.in</a></td>
+    </tr>
+    <tr>
+        <td>Fr. Conceicao Rodrigues College of Engineering (CRCE)</td>
+        <td>15 LPA</td>
+        <td>4.5 LPA</td>
+        <td><a href="http://www.frcrce.ac.in" target="_blank">frcrce.ac.in</a></td>
+    </tr>
+    <tr>
+        <td>Rajiv Gandhi Institute of Technology (RGIT)</td>
+        <td>12 LPA</td>
+        <td>4 LPA</td>
+        <td><a href="http://www.rgit.edu.in" target="_blank">rgit.edu.in</a></td>
+    </tr>
+    <tr>
+        <td>Xavier Institute of Engineering (XIE)</td>
+        <td>10 LPA</td>
+        <td>4 LPA</td>
+        <td><a href="http://www.xavierengg.com" target="_blank">xavierengg.com</a></td>
+    </tr>
+    <tr>
+        <td>Rizvi College of Engineering</td>
+        <td>9 LPA</td>
+        <td>3.5 LPA</td>
+        <td><a href="http://engg.rizvi.edu.in" target="_blank">engg.rizvi.edu.in</a></td>
+    </tr>
+    <tr>
+        <td>Vidyalankar Institute of Technology (VIT)</td>
+        <td>14 LPA</td>
+        <td>4.2 LPA</td>
+        <td><a href="http://www.vit.edu.in" target="_blank">vit.edu.in</a></td>
+    </tr>
+    <tr>
+        <td>Shah and Anchor Kutchhi Engineering College (SAKEC)</td>
+        <td>11 LPA</td>
+        <td>4 LPA</td>
+        <td><a href="http://www.shahandanchor.com" target="_blank">shahandanchor.com</a></td>
+    </tr>
+    <tr>
+        <td>Atharva College of Engineering</td>
+        <td>13 LPA</td>
+        <td>4.2 LPA</td>
+        <td><a href="http://www.atharvacoe.ac.in" target="_blank">atharvacoe.ac.in</a></td>
+    </tr>
+</table>
+
+<style>
+    
+    h1 {
+        font-weight: bold;
+        text-align: center;
+        position: relative;
+    }
+    h1::after {
+        content: '';
+        display: block;
+        width: 50%; /* Adjust width of underline */
+        height: 2px; /* Adjust thickness of underline */
+        background-color: black;
+        margin: 8px auto 0;
+    }
+    h2{
+        font-weight: bold;
+        text-align: center;
+    }
+  </style>
+  
+  
+  <h1>PUNE TOP 15 COLLEGES</h1>
+  <style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+    }
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+    tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+    tr:hover {
+        background-color: #ddd;
+    }
+</style>
+
+<h2>Top Engineering Colleges in Pune</h2>
+<table>
+    <tr>
+        <th>College Name</th>
+        <th>Highest Package (INR)</th>
+        <th>Average Package (INR)</th>
+        <th>Website</th>
+    </tr>
+    <tr>
+        <td>College of Engineering Pune (COEP)</td>
+        <td>40 LPA</td>
+        <td>8 LPA</td>
+        <td><a href="http://www.coep.org.in" target="_blank">coep.org.in</a></td>
+    </tr>
+    <tr>
+        <td>Pune Institute of Computer Technology (PICT)</td>
+        <td>32 LPA</td>
+        <td>6.5 LPA</td>
+        <td><a href="http://www.pict.edu" target="_blank">pict.edu</a></td>
+    </tr>
+    <tr>
+        <td>Vishwakarma Institute of Technology (VIT)</td>
+        <td>22 LPA</td>
+        <td>6 LPA</td>
+        <td><a href="http://www.vit.edu" target="_blank">vit.edu</a></td>
+    </tr>
+    <tr>
+        <td>MIT College of Engineering (MITCOE)</td>
+        <td>28 LPA</td>
+        <td>5.8 LPA</td>
+        <td><a href="http://www.mitcoe.edu.in" target="_blank">mitcoe.edu.in</a></td>
+    </tr>
+    <tr>
+        <td>Walchand College of Engineering (WCE)</td>
+        <td>20 LPA</td>
+        <td>5.5 LPA</td>
+        <td><a href="http://www.walchandsangli.ac.in" target="_blank">walchandsangli.ac.in</a></td>
+    </tr>
+    <tr>
+        <td>Dr. D. Y. Patil Institute of Technology (DYPIET)</td>
+        <td>25 LPA</td>
+        <td>6 LPA</td>
+        <td><a href="http://www.dypiet.ac.in" target="_blank">dypiet.ac.in</a></td>
+    </tr>
+    <tr>
+        <td>Sinhgad College of Engineering (SCOE)</td>
+        <td>16 LPA</td>
+        <td>4.5 LPA</td>
+        <td><a href="http://www.sinhgad.edu" target="_blank">sinhgad.edu</a></td>
+    </tr>
+    <tr>
+        <td>VIT College of Engineering (VITCOE)</td>
+        <td>19 LPA</td>
+        <td>5 LPA</td>
+        <td><a href="http://www.vitcoe.edu" target="_blank">vitcoe.edu</a></td>
+    </tr>
+    <tr>
+        <td>Bharati Vidyapeeth Deemed University College of Engineering</td>
+        <td>18 LPA</td>
+        <td>4.8 LPA</td>
+        <td><a href="http://www.bvucoep.edu.in" target="_blank">bvucoep.edu.in</a></td>
+    </tr>
+    <tr>
+        <td>JSPM's Rajarshi Shahu College of Engineering (RSCOE)</td>
+        <td>20 LPA</td>
+        <td>5 LPA</td>
+        <td><a href="http://www.jspmrscoe.edu.in" target="_blank">jspmrscoe.edu.in</a></td>
+    </tr>
+    <tr>
+        <td>MIT Academy of Engineering (MITAOE)</td>
+        <td>18 LPA</td>
+        <td>5 LPA</td>
+        <td><a href="http://www.mitaoe.ac.in" target="_blank">mitaoe.ac.in</a></td>
+    </tr>
+    <tr>
+        <td>Rajiv Gandhi Institute of Technology (RGIT)</td>
+        <td>12 LPA</td>
+        <td>4 LPA</td>
+        <td><a href="http://www.rgit.edu.in" target="_blank">rgit.edu.in</a></td>
+    </tr>
+    <tr>
+        <td>Marathwada Mitra Mandal's College of Engineering (MMCOE)</td>
+        <td>14 LPA</td>
+        <td>4.2 LPA</td>
+        <td><a href="http://www.mmcoe.edu.in" target="_blank">mmcoe.edu.in</a></td>
+    </tr>
+    <tr>
+        <td>Ramrao Adik Institute of Technology (RAIT)</td>
+        <td>22 LPA</td>
+        <td>5.8 LPA</td>
+        <td><a href="http://www.rait.ac.in" target="_blank">rait.ac.in</a></td>
+    </tr>
+    <tr>
+        <td>Pimpri Chinchwad College of Engineering (PCCOE)</td>
+        <td>26 LPA</td>
+        <td>5.5 LPA</td>
+        <td><a href="http://www.pccoepune.com" target="_blank">pccoepune.com</a></td>
+    </tr>
+</table>
+
+{% endblock body %}

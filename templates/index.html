@@ -1,0 +1,258 @@
+{% extends "base.html" %}
+{% block title %}
+Home
+{% endblock title %}
+{% block body %}
+
+   
+
+
+
+
+
+
+
+
+<div class=" ">
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" >
+        <img src="/static/image1.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/static/image3.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item"  >
+        <img src="/static/image2.png" class="d-block w-100" alt="..." >
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+<br>
+<style>
+  .centreplace {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50vh;
+      background-color: #f4f4f4;
+  }
+  .trending {
+      width: 500px; /* Increased width */
+      border: 1px solid #ccc;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+      opacity: 0;
+      animation: fadeIn 2s forwards;
+  }
+  @keyframes fadeIn {
+      to {
+          opacity: 1;
+      }
+  }
+  .trending h2 {
+      margin-top: 0;
+      text-align: center;
+  }
+  .trending ul {
+      list-style-type: none;
+      padding: 0;
+  }
+  .trending li {
+      margin: 10px 0;
+  }
+  .trending li a {
+      text-decoration: none;
+      color: #007bff;
+  }
+  .trending li a:hover {
+      text-decoration: underline;
+  }
+</style>
+
+<div class="centreplace">
+<div class="trending">
+  <h2>What's Trending !!</h2>
+  <ul>
+    <li><a href="https://drive.google.com/file/d/1uzWZo4D__cErcA9pr0DTSj1XaoStusAq/view?usp=sharing">CuttOff Of 2024 CAP ROUND 1<span class="badge badge-secondary">New</span></a></li>
+    <li><a href="https://drive.google.com/file/d/1w_xvj2UVjqgw9QmFDUBbNXvIf-E2Yv1K/view?usp=drive_link">CuttOff Of 2024 CAP ROUND 2<span class="badge badge-secondary">New</span></a></li>
+    <li><a href="https://drive.google.com/file/d/1yFe2rZi_nBmN6OR4Hji_xZod4tKR3O6H/view?usp=drive_link">CuttOff Of 2024 CAP ROUND 3<span class="badge badge-secondary">New</span></a></li>
+      <li><a href="/collegelist">Rank Wise List of Colleges In Maharashtra<span class="badge badge-secondary">New</span></a></li>
+      <a href="https://drive.google.com/file/d/14nKj4NiUyRkvrmWWGrh1WDON2-47QBVx/view?usp=drive_link">Important dates of MHTCET admisssions <span class="badge badge-secondary">New</span></a>
+      <br>
+      
+      <a href="https://drive.google.com/file/d/14nKj4NiUyRkvrmWWGrh1WDON2-47QBVx/view?usp=drive_link">Book An Exclusive One On One Counselling Session!!! <span class="badge badge-secondary">New</span></a>
+      <li><a href="#trend4">Past Year MhTCET Papers</a></li>
+  </ul>
+</div>
+</div>
+
+{% comment %} <div class="card" style="width: 18rem;">
+  <img src="https://tse2.mm.bing.net/th?id=OIP.eJwYLe-v0PzSzRSYPGWmVwHaCs&pid=Api&P=0&h=180" class="card-img-top" alt="...">
+  <div class="card-body">
+    
+    
+  </div> {% endcomment %}
+  {% comment %} --------------------social media----------------------- {% endcomment %}
+  
+  <div class="center ">
+    <a class="btn btn-warning my-4 mx-4" href="https://youtube.com/@studymate9595?si=Ue7E9XjsppldXcOE" role="button">YouTube Channel</a>
+    <a class="btn btn-warning my-4 mx-4" href="https://t.me/studymateoff" role="button">Telegram Channel</a>
+    
+</div>
+  <style>
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+  }
+</style>
+
+  
+<style>
+    
+  h1 {
+      font-weight: bold;
+      text-align: center;
+      position: relative;
+  }
+  h1::after {
+      content: '';
+      display: block;
+      width: 50%; /* Adjust width of underline */
+      height: 2px; /* Adjust thickness of underline */
+      background-color: black;
+      margin: 8px auto 0;
+  }
+  h2{
+      font-weight: bold;
+      text-align: center;
+  }
+</style>
+
+
+<h1>Study Materials(Short Notes , Formula Sheets)</h1>
+  
+ 
+
+
+    <div class="row  ">
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+          <img src="https://beamingnotes.com/wp-content/uploads/2017/03/physics1.jpg" class="d-block w-100" alt="..." >
+          <div class="card-body">
+            <p>1. Short Notes</p>
+            <p>2. MindMapes</p>
+            <p>3. Formula Sheets</p>
+
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a class="btn btn-warning " href="/physics" role="button">Physics</a>
+                
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+          <img src="https://www.itweb.co.za/static/pictures/2018/05/resized/-fs-Math-2018.xl.jpg" class="d-block w-100" alt="..." >
+          <div class="card-body">
+            <p>1. Short Notes</p>
+            <p>2. MindMapes</p>
+            <p>3. Formula Sheets</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a class="btn btn-warning " href="/maths" role="button">Maths</a>
+               
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+          <img src="https://img.jagranjosh.com/imported/images/E/Articles/chemistry_2018_640.jpg" class="d-block w-100" alt="..." >
+          <div class="card-body">
+            <p>1. Short Notes</p>
+            <p>2. MindMapes</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">Chemistry</button>
+                
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="card text-center">
+      <div class="card-header">
+      
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Rank-Wise List Of Colleges In Maharashtra</h5>
+        <a href="/collegelist" class="btn btn-dark">College List</a>
+      </div>
+      <div class="card-footer text-muted">
+      
+      </div>
+    </div>
+
+
+    
+
+    <div class="card text-center">
+      <div class="card-header">
+      
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Past Year Board Papers</h5>
+        <a href="#" class="btn btn-dark">Board PYQ's</a>
+      </div>
+      <div class="card-footer text-muted">
+      
+      </div>
+    </div>
+
+
+    <div class="card text-center">
+      <div class="card-header">
+      
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Past Year MHTCET Papers</h5>
+        <a href="#" class="btn btn-dark">MHTCET PYQ's</a>
+      </div>
+      <div class="card-footer text-muted">
+      
+      </div>
+    </div>
+
+
+      
+    
+    
+
+
+{% endblock body %}
